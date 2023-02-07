@@ -1,3 +1,4 @@
+# importing the whole CoinClass file, not just the "coin" class
 import CoinClass as c
 
 
