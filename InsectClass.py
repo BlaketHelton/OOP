@@ -12,9 +12,10 @@ insect = Insect(2, 4)
 print("The insect can fly " + str(insect.lengthOfFlight()) + " miles.")
 '''
 class Insect:
-    def __init__(self):
-        self.wings = 2
-        self.legs = 4
+    def __init__(self,n,w,l):
+        self.name = n
+        self.wings = w
+        self.legs = l
         self.flight = 0
 
     def lengthOfFlight(self):
@@ -22,7 +23,7 @@ class Insect:
 
     def get_flight(self):
         return Insect.lengthOfFlight
+    
+    def nameOfInsect(self):
+        return self.name
 
-
-insect = Insect()
-print("The insect can fly " + str(insect.lengthOfFlight()) + " miles.")
